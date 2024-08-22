@@ -18,6 +18,9 @@ def load_data(data_path = 'data/'):
     data = np.concatenate(data, axis=0)
     labels = np.concatenate(labels, axis=0)
 
+    # signal filter (The zero-phase digital filtering)
+    # Zero-phase filtering is considered in this paper, but it is not set here.
+    
     # Z-normalization
     mean = np.mean(data)
     std = np.std(data)
