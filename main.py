@@ -6,6 +6,9 @@ from sklearn.model_selection import train_test_split
 from trainer import *
 from net import *
 
+"""Zero-phase filtering is considered in this paper, but it is not set here."""
+"""Accuracy = 82.73 % """
+
 def main(epoch, batch_size):
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -37,7 +40,7 @@ def main(epoch, batch_size):
     train(net, train_loader, criterion, optimizer, device, num_epochs=epoch)
     test(net, test_loader)
 
-
+    
 if __name__ == '__main__':
     epoch = 50
     bz = 32
