@@ -3,4 +3,4 @@ This is a PyTorch example of the paper "Classification of VLF/LF Lightning Signa
 Please run 'main.py'. 
 
 ## Acknowledgement
-Original data provided by [1D-CNN lightning] (https://github.com/jqwang1993/lightning-dataset) by jiaquan WANG.
+Original data provided by [1D-CNN Lightning Dataset](https://github.com/jqwang1993/lightning-dataset) by Jiaquan Wang.
